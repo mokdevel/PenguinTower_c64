@@ -1,15 +1,26 @@
 ;-------------------------------------------------
 ;DEFINES
+
+RELEASE
+STARTWITHRUN
+
+!ifndef RELEASE {
 DEBUG
 LOADGFX         ;Load default graphics at compile time
 STARTWITHRUN    ;Run will start the program. Otherwise compiled from $0810
-!source "..\common\macro.asm"
+}
+
+
 
 ;---------------------------------------------------
 ;Include files
+
+!source "..\common\macro.asm"
 !source "bledglobal.asm"
 
-                                                      ;4400 47ff - CODE
+;===================================================
+;MEMORY MAP
+                                                      ;0800 23ff - CODE
         *= HELP_EDITOR
 !media  "help_editor.charscreen",char,0,0,40,25       ;2400 27e7 - screen: bled help
                                                       ;27e8 27ff - empty

@@ -1,7 +1,7 @@
 @echo off
 call C:\c64\setc64vars.bat
 set rootdir=.
-set file=ptower64
+set file=penguintower
 set d_file=d-%file%
 set startaddr=$4500
 

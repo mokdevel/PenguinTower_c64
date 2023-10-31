@@ -1,7 +1,7 @@
 ;-------------------------------------------------
 ;DEFINES
 
-;RELEASE
+RELEASE
 
 !ifndef RELEASE {
 DEBUG            ;Enable various debug things
@@ -13,6 +13,7 @@ LASTSCREEN_SKIP  ;Do not load the last screen to $c000+
 }
 
 ;-------------------------------------------------
+;Include files
 
 !source "..\common\macro.asm"
 !source "globals.asm"
