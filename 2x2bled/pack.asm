@@ -178,6 +178,7 @@ _spl0    jsr SAVE_init_byte
 ;         lda #>(PACKTO+100)
 ;         sta $05
 
+         ldx #$01
          jsr SAVE_file_byte
          rts
 
@@ -225,6 +226,7 @@ _spp1    jsr SAVE_init_byte
          lda #>(lvldata_lo) 
          sta $05
 
+         ldx #$01
          jsr SAVE_file_byte
          rts
          

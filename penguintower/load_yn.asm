@@ -177,6 +177,7 @@ _ss00    pla
          sta $04
          lda #>scoretxt_end
          sta $05
+         ldx #$00                     ;store without start address
          jsr SAVE_file_byte
 
          pla

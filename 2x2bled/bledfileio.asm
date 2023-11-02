@@ -75,6 +75,7 @@ gfx_Save jsr NOIRQ
          stx $04
          sty $05
 
+         ldx #$01
          jsr SAVE_file_byte
          beq *+5                ;no error
          jmp fileErrorHandler

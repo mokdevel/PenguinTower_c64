@@ -159,6 +159,8 @@ _lf_error ;error
 ;
 ; IN: ($02)=memory start address 
 ;     ($04)=memory end address 
+;     X=0 - do not store start address to file
+;     X=1 - store start address to file
 ;
 ; lda #<memory_start        ;From where to save
 ; sta $02
@@ -170,15 +172,21 @@ _lf_error ;error
 ; lda #>memory_end
 ; sta $05
 ;
+; ldx #$00 or #$01
 ; jsr SAVE_file
 ;
 ;See: https://codebase64.org/doku.php?id=base:writing_a_file_byte-by-byte
 
 SAVE_file_byte 
+         cpx #$00
+         beq _sf00
+         
          lda $02            ;Store start address
-         sta $ae
+         jsr $ffd2          ;Write byte to output channel
+;         sta $ae
          lda $03
-         sta $af
+         jsr $ffd2          ;Write byte to output channel         
+;         sta $af
 
 _sf00    jsr $ffb7          ; call READST (read status byte)
          bne _sf_error      ; write error         
