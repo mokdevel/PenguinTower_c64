@@ -1,6 +1,6 @@
 # PenguinTower_c64
 Penguin Tower game for Commodore 64
-##Credits
+## Credits
 TBD
 ## Thanks
 TBD
