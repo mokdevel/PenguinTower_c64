@@ -31,7 +31,7 @@ info    ;!byte TEXTNOGFX
         !scr " @"
         !scr "problemchild @"
         !scr " productions @"
-        !scr "  1994-2023 @"
+        !scr "   1994-2023 @"
         !scr "                v7.3 @"
         !byte TEXTEOP
         !byte BLOCK_WHEART
@@ -56,26 +56,26 @@ info    ;!byte TEXTNOGFX
 scoretxt !byte TEXTNOGFX
         !scr "  high scores @"
         !scr "---------------@"
-sco00   !scr "0019000 00 darc@"
-sco01   !scr "0018000 00 darc@"
-sco02   !scr "0017000 00 darc@"
-sco03   !scr "0016000 00 darc@"
-sco04   !scr "0015000 00 darc@"
+sco00   !scr "0012000 00 darc@"
+sco01   !scr "0011000 00 darc@"
+sco02   !scr "0010000 00 darc@"
+sco03   !scr "0009000 00 darc@"
+sco04   !scr "0008000 00 darc@"
         !byte TEXTEOP
         !byte TEXTNOGFX
-sco05   !scr "0014000 00 darc@"
-sco06   !scr "0013000 00 darc@"
-sco07   !scr "0012000 00 darc@"
-sco08   !scr "0011000 00 darc@"
-sco09   !scr "0010000 00 darc@"
-sco10   !scr "0009000 00 darc@"
-sco11   !scr "0008000 00 darc@"
+sco05   !scr "0007000 00 darc@"
+sco06   !scr "0006000 00 darc@"
+sco07   !scr "0005000 00 darc@"
+sco08   !scr "0004000 00 darc@"
+sco09   !scr "0003000 00 darc@"
+sco10   !scr "0002000 00 darc@"
+sco11   !scr "0001000 00 darc@"
         !byte TEXTEOP
         !byte TEXTNOGFX
         !scr "    team level @"
         !scr "---------------@"
-sco20   !scr "[[[[[[[ 30 darc@" ;NOTE: "[" is FAKE_SPACE
-sco21   !scr "[[[[[[[ 20 darc@"
+sco20   !scr "[[[[[[[ 12 darc@" ;NOTE: "[" is FAKE_SPACE
+sco21   !scr "[[[[[[[ 11 darc@"
 sco22   !scr "[[[[[[[ 10 darc@"
 sco23   !scr "[[[[[[[ 09 darc@"
 sco24   !scr "[[[[[[[ 08 darc@"

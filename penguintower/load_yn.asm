@@ -73,10 +73,21 @@ _lyn11   lda $dc00
          ;exiting
 _lyn0    lda yes_or_no
          bne _lyn_end
+         
+         lda #<loadyn_txt2
+         ldx #>loadyn_txt2
+         sta $fb
+         stx $fc
+         ldx #$0b
+         ldy #$0a
+         jsr printtext
+         
          jsr highscore_load
 _lyn_end rts
 
 yes_or_no !byte LOAD_NO
+
+;-------------------------------------------------
 
 blinktext
 _bt_ctr  ldx #$00             ;SMC
@@ -103,4 +114,79 @@ _bt01    iny
          
 loadyn_txt0 !scr "load highscores @"
 loadyn_txt1 !scr "yes - no @"
+loadyn_txt2 !scr "loading... @"
          
+;---------------------------------------------------
+;Load highscores
+
+highscore_load
+         lda $01
+         pha
+         lda #$37
+         sta $01
+         
+         lda #LOADNAME_END-LOADNAME     ;filename length
+         ldx #<LOADNAME
+         ldy #>LOADNAME
+         jsr LOAD_init_byte
+
+         lda #<scoretxt                 ;Where to load
+         sta $02
+         lda #>scoretxt         
+         sta $03
+
+         lda #<(scoretxt_end-scoretxt)  ;How many bytes to read
+         sta $04
+         lda #>(scoretxt_end-scoretxt)
+         sta $05
+         ldx #$00                       ;read from start of file
+         jsr LOAD_file_byte
+
+         pla
+         sta $01
+         rts
+
+;---------------------------------------------------
+;Save highscores
+
+highscore_save
+         jsr noirq_f
+
+         ldx #10      ;Read values from stack as we came to this routine 'ugly'
+_ss00    pla
+         dex
+         bne _ss00
+
+         sei
+         lda $01
+         pha
+         lda #$37
+         sta $01
+         
+         lda #SAVENAME_END-SAVENAME   ;filename length
+         ldx #<SAVENAME
+         ldy #>SAVENAME
+         jsr SAVE_init_byte
+
+         lda #<scoretxt               ;From where to save
+         sta $02
+         lda #>scoretxt         
+         sta $03
+
+         lda #<scoretxt_end           ;To where to save
+         sta $04
+         lda #>scoretxt_end
+         sta $05
+         jsr SAVE_file_byte
+
+         pla
+         sta $01
+         cli
+         
+         jmp RealStart                ;restart main screen
+
+SAVENAME !pet "@0:"
+LOADNAME !pet "highscores"
+LOADNAME_END
+         !pet ",p,w"
+SAVENAME_END

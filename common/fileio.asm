@@ -3,7 +3,6 @@
 ;DEFINES you can use
 ; DEF_FILEIO_BYTE   : Compile only the per byte load and save routines
 ; DEF_FILEIO_FFD5   : Compile only the basic kernel load (ffd5) and save routines
-; DEF_FILEIO_RESET  : Include the drive reset code
 
 ;If neither is defined, enable both
 !ifndef DEF_FILEIO_BYTE {
@@ -79,7 +78,12 @@ INIT_error_byte
          rts
          
 ;------------------------------------
-;Load file
+;Load file byte per byte
+;
+; IN: ($02)=memory start address 
+;     ($04)=amount of bytes to load
+;     X=0 - file does not have start address, read from start of file
+;     X=1 - file has start address, skip it by dummy reading them
 ;
 ; lda #<memory_start        ;Where to load
 ; sta $02
@@ -91,6 +95,7 @@ INIT_error_byte
 ; lda #>length
 ; sta $05
 ;
+; ldx #$00 or #$01
 ; jsr LOAD_file_byte
 ;
 ;See: https://codebase64.org/doku.php?id=base:writing_a_file_byte-by-byte
@@ -108,6 +113,8 @@ LOAD_file_byte
          sta $05
 
          ;Read load address as we don't need it
+         cpx #$00
+         beq _lf00
          jsr $ffcf
          jsr $ffcf 
 _lf00    jsr $ffb7          ; call READST (read status byte)
@@ -150,6 +157,9 @@ _lf_error ;error
 ;------------------------------------
 ;Save file
 ;
+; IN: ($02)=memory start address 
+;     ($04)=memory end address 
+;
 ; lda #<memory_start        ;From where to save
 ; sta $02
 ; lda #>memory_start         
@@ -166,9 +176,9 @@ _lf_error ;error
 
 SAVE_file_byte 
          lda $02            ;Store start address
-         jsr $ffd2          ;Output Vector, chrout
+         sta $ae
          lda $03
-         jsr $ffd2          
+         sta $af
 
 _sf00    jsr $ffb7          ; call READST (read status byte)
          bne _sf_error      ; write error         
@@ -310,26 +320,3 @@ _fc01    lda #FILENUMBER    ;filenumber
          jsr $ffcc          ;Restore default I/O channels
          lda status_ffb7    ;Return the original error code
          rts
-
-;------------------------------------
-;Unknown if this works...
-
-!ifdef DEF_FILEIO_RESET {
-FILE_drivereset
-         ;reset diskdrive
-         lda #$fb
-         ldx #<resettxt
-         ldy #>resettxt
-         jsr $ffbd     ; call SETNAM         
-         
-         lda #$0f
-         ldx #$08
-         ldy #$0f
-         jsr $ffba
-         
-         jsr $ffc0
-         ;bcs errorhandling
-         rts
-
-resettxt !pet "u:"
-}

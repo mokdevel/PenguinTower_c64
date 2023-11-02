@@ -46,10 +46,10 @@ _wot1    ldx #$00       ;press P to pause (TBD)
 
 _wot2    
 !ifdef CHEAT {
-         lda #%11111011 ;press C to kill players)
+         lda #%11111101 ;press E to kill players)
          sta $dc00      
          lda $dc01
-         cmp #%11101111
+         cmp #%10111111
          bne _wot7
          ldy #$00
          jsr initplr_death

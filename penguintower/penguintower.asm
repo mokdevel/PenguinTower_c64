@@ -1,7 +1,7 @@
 ;-------------------------------------------------
 ;DEFINES
 
-RELEASE        ;Disables all defines when doing a release
+;RELEASE        ;Disables all defines when doing a release
 CHEAT
 TOBEREMOVED
 
@@ -15,18 +15,18 @@ DEF_FILEIO_BYTE ;Enable load/save routines
 
 !ifndef RELEASE {
 DEBUG           ;Enable various debug things
-;STARTWITHRUN    ;Code starts from $0801 messing the few first blocks of graphics. 
-;NOMUSIC         ;Does not compile nor play music.
+STARTWITHRUN    ;Code starts from $0801 messing the few first blocks of graphics. 
+NOMUSIC         ;Does not compile nor play music.
 ;GOMAIN          ;Go to mainmenu and skip intro
 ;GOGAME          ;Starts the game immediately§. To be used only during development.
 ;GOHOF          ;Starts game but goes to halloffame via gameover immediately
 ;GOENDTRO        ;Goes to endtro. This overrides GOGAME
 ;NOSCORELOAD     ;Don't load highscores
-CHEAT           ;Allow T to advance to next level, U +10 levels, ...
+CHEAT           ;Allow T to advance to next level, U +10 levels, E kills all players...
 
 ;--- Level data load defines ---
 ;LEVELS_LOAD     ;Load levels from disk instead of compilation. Quite untested.
-;LEVELS_LIMITED  ;Compilation just loads some of the levels to fit under $d000.
+LEVELS_LIMITED  ;Compilation just loads some of the levels to fit under $d000.
 ;LEVELS_NONE     ;Do not compile level data. Used when level data is not needed for faster loading.
 ;ONLYLASTLEVEL   ;Used when working on the last level
 }

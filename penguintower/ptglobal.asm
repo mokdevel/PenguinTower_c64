@@ -95,9 +95,9 @@ CLOCK_FREEZETIME  = $f0
 ;Override values in DEBUG
 !ifdef DEBUG {
   PLR_AM          = %11
-  NUTS_AM         = 9
-  CREDITS_AM      = 9
-  STARTLEVEL      = 95;86;48;98;
+  NUTS_AM         = 0
+  CREDITS_AM      = 0
+  STARTLEVEL      = 0;95;86;48;98;
   DEF_MON_AMOUNT  = 6;6
 ;  LASTLEVEL       = 10
   EXTRALIFEK      = 20       ;Every EXTRALIFEK (K=1000) points, you get an extra life
