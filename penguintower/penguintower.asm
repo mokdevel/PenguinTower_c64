@@ -45,11 +45,11 @@ LEVELS_LIMITED  ;Compilation just loads some of the levels to fit under $d000.
 ;SCR04                                          ;0400-07ff - main screen
 !ifndef STARTWITHRUN {
     *= GAMEBMPDATA                              ;0800 17ff - block graphics - can't be moved. Skip 10: start addr (2) + 8 BLED specific bytes 
-    !bin    "bindata\gamegfx85.prg",,10                 
+    !bin    "bindata\gamegfx86.prg",,10                 
   } else {
     START_SKIP=$10
     *= GAMEBMPDATA+START_SKIP                   ;0800 17ff - block graphics - can't be moved
-    !bin    "bindata\gamegfx85.prg",((BLOCKANIMDATA-GAMEBMPDATA)-START_SKIP),(10+START_SKIP)
+    !bin    "bindata\gamegfx86.prg",((BLOCKANIMDATA-GAMEBMPDATA)-START_SKIP),(10+START_SKIP)
 }
         *= BLOCKANIMDATA
 !bin    "bindata\blocanim78.prg",($a0*8),10             ;1800 1cff - block animation graphics

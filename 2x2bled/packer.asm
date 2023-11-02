@@ -269,10 +269,8 @@ endflag     !byte 00
 levelno     !byte 00
 levelcount  !byte 00
 levelpage   !byte 00  ;the start page for the levels ($100 per page)
-!ifdef DEBUG {
-        !align 255,0
-}        
-lvldata_lo  !fill $80,0 
+    !align 255,0
+lvldata_lo  !fill $80,0   ;keep this aligned to page
 lvldata_hi  !fill $80,0             
             
             
