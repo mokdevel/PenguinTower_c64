@@ -1,4 +1,4 @@
-﻿;---------------------------------------
+;---------------------------------------
 ;LevelDEPACKer routine
 ;(c)copyright 1995 Scapegoat/Topaz Beerline
 ;---------------------------------------
@@ -64,3 +64,6 @@ add04    inc $fd
          bne *+4
          inc $fe
          rts
+
+;Important license text :-)         
+!pet "problemchildren have horny minds"         

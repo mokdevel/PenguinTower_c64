@@ -1,7 +1,7 @@
 ;-------------------------------------------------
 ;DEFINES
 
-;RELEASE        ;Disables all defines when doing a release
+RELEASE        ;Disables all defines when doing a release
 CHEAT
 TOBEREMOVED
 
