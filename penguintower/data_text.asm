@@ -34,7 +34,7 @@ info    ;!byte TEXTNOGFX
         !scr "   1994-2023 @"
         !scr "                v7.3 @"
         !byte TEXTEOP
-        !byte BLOCK_WHEART
+        !byte BLOCK_EGG_W;BLOCK_WHEART
         !scr "programming @"
         !scr "% jani hirvo @"
         !scr "audial art @"
@@ -42,7 +42,15 @@ info    ;!byte TEXTNOGFX
         !scr "visual art @"
         !scr "% jani hirvo @"
         !byte TEXTEOP
-        !byte TEXTWRAP
+        !byte BLOCK_WHEART
+        !scr "packer code @"
+        !scr "% skape @"
+        !scr " @"
+        !scr "thx to testers @"
+        !scr "  %ulla%alma% @"
+        !scr "%antero%alina% @"
+        !scr " %akseli%anni% @"
+        !byte TEXTEOP
         !byte TEXTNOGFX
         !scr "pick player @"
         !scr "random levels @"
@@ -52,6 +60,7 @@ info    ;!byte TEXTNOGFX
         !scr "save scores @"
         !scr "start game @"
         !byte TEXTEOP
+        !byte TEXTWRAP
              ;0123456789012345
 scoretxt !byte TEXTNOGFX
         !scr "  high scores @"
@@ -170,6 +179,11 @@ help    !byte BLOCK_BOMB
         !scr "teleports you @"
         !scr "to a secret @"
         !scr "bonus level. @"
+        !byte TEXTEOP
+        !byte BLOCK_GLUE
+        !scr "% glue @"
+        !scr "------------- @"
+        !scr "slows penguins @"
         !byte TEXTEOP
         !byte TEXTWRAP
 

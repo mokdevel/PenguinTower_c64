@@ -1,22 +1,27 @@
 ;----------------------------------------------
-;animate blocks (queries etc...)
+;Checks if block needs to be animated (queries etc...)
+;
+;IN:  A=block to check
 
 achk_function 
          ldx #$00
          cmp xanwh,x
-         beq achk2
+         beq _achk2
          inx
          cpx #(xasl-xash)       ;Amount of animations. 
          bne achk_function+2
-         cmp #$a3
-         beq achk2-2
+;         cmp #$a3
+;         beq achk2-2
+;         rts
+;         ldx #$02
          rts
-         ldx #$02
 
-achk2    dec xanti,x
-         bpl *+5
-         jmp aitb
-         rts
+_achk2   dec xanti,x
+         bpl _achk3
+         lda xantb,x
+         sta xanti,x
+         jmp _aitb0
+_achk3   rts
 
 xash     !byte >xky,>xhe,>xhe,>xbo,>xfi,>xice,>xfla,>xbom,>xybo
 xasl     !byte <xky,<xhe,<xhe,<xbo,<xfi,<xice,<xfla,<xbom,<xybo
@@ -43,9 +48,14 @@ xybo     !byte $23,$23,$23,$23,$23,$23,$23,$23        ;yellow bomb
          !byte $26,$27,$27,$27,$27,$26,$25,$24
 
 ;----------------------------------------------
-;animate blocks (queries etc...)
-
-animate_block ldx #$00
+;Animate blocks (queries etc...)
+;
+; This will animate all blocks
+;
+; TBD: Create an animate_block_reset function to set the default timer values for xanti.
+;
+animate_block 
+         ldx #$00
 _ab00    dec xanti,x
          bpl nextan
          jsr aitb
@@ -55,7 +65,8 @@ nextan   inx
          bne _ab00
          rts
 
-aitb     lda xantb,x
+;Animate a certain block found in xanwh. X=index to table
+aitb     lda xantb,x            ;Anim
          sta xanti,x
          
          ;If we have passed line $b0, save cycles and don't animate block

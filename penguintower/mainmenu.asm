@@ -147,7 +147,7 @@ wc0      sta wfn+1        ;reset waitfornext counter
          jmp what
          
 wc4      sta datablk+1
-         jsr datablk      ;copy gfx for datablock
+;         jsr datablk      ;copy gfx for datablock
 
          ;ok, find the next page and save it
          jsr printWankText
@@ -191,14 +191,16 @@ wc3      dec wankwait+1
          ;Continue the main screen routine
          
 conti    jsr readjoy
+         +setd020 07
          lda datablk+1
          jsr achk_function
+         +setd020 05         
+         jsr datablk      ;copy gfx for datablock         
+         +setd020 00
 
          ldx #$ff
          stx $dc00
          stx $dc01
-;         ldx #PTLOGO_D020
-;         stx $d020
          ldx #$38
          cpx $d012
          bne *-3

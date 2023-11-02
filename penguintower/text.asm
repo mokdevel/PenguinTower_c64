@@ -228,7 +228,7 @@ yhi04    !byte $04,$04,$04,$04,$04,$04
 ;Copy the block mentioned in text to FONTBMPDATA
 ;in character '%'.
 
-datablk  ldx #$00
+datablk  ldx #$00             ;!!SMC
          cpx #TEXTNOGFX
          bne db3
          lda l1+1
