@@ -10,12 +10,10 @@ achk_function
          inx
          cpx #(xasl-xash)       ;Amount of animations. 
          bne achk_function+2
-;         cmp #$a3
-;         beq achk2-2
-;         rts
-;         ldx #$02
+         cmp #BLOCK_YQUERY      ;Special case: yellow query animation is actually white animation
+         beq _achk1
          rts
-
+_achk1   ldx #$00
 _achk2   dec xanti,x
          bpl _achk3
          lda xantb,x
@@ -30,7 +28,8 @@ xancb    !byte $14,$04,$04,$03,$10,$10,$08,$08,$18    ;length of animation
 
 xanwh    !byte BLOCK_WQUERY, BLOCK_WHEART, BLOCK_YHEART, BLOCK_BONUSLVL, BLOCK_FIRE, BLOCK_ICECUBE, BLOCK_LIGHTNING, BLOCK_WBOMB, BLOCK_BOMB ;animation target block
 xanti    !byte $00,$00,$01,$00,$00,$01,$02,$03,$02    ;animation timer
-xantb    !byte $03,$04,$05,$04,$01,$04,$04,$04,$06*2   ;speed - animation timer default value 
+xanti_def!byte $00,$00,$01,$00,$00,$01,$02,$03,$02    ;animation timer start values
+xantb    !byte $03,$04,$05,$04,$01,$04,$04,$04,$06*2  ;speed - animation timer default value 
 
 xky      !byte $06,$07,$08,$09,$0a,$0b,$0c,$0d,$0e    ;question mark animation
          !byte $0f,$10,$10,$0f,$0e,$0d,$0c,$0b,$0a
@@ -44,16 +43,14 @@ xice     !byte $16,$16,$16,$16,$16,$16,$16,$16        ;iceblock animation
 xfla     !byte $1c,$1c,$1d,$1c,$1d,$1e,$1d,$1e        ;flash animation
 xbom     !byte $1f,$20,$21,$22,$21,$1f,$21,$20        ;white bomb
 xybo     !byte $23,$23,$23,$23,$23,$23,$23,$23        ;yellow bomb
-         !byte $23,$23,$23,$23,$23,$23,$24,$25        ;yellow bomb
+         !byte $23,$23,$23,$23,$23,$23,$24,$25
          !byte $26,$27,$27,$27,$27,$26,$25,$24
 
 ;----------------------------------------------
 ;Animate blocks (queries etc...)
 ;
 ; This will animate all blocks
-;
-; TBD: Create an animate_block_reset function to set the default timer values for xanti.
-;
+
 animate_block 
          ldx #$00
 _ab00    dec xanti,x
@@ -197,4 +194,16 @@ xs3      lda $ff00,y
          iny
          cpy #$08
          bne xs0
+         rts
+
+;----------------------------------------------
+;Resets the block animation timers
+
+animate_block_reset
+         ldx #$00
+_abr0    lda xanti_def,x
+         sta xanti,x
+         inx
+         cpx #(xasl-xash)       ;Amount of animations. 
+         bne _abr0
          rts

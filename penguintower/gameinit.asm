@@ -10,6 +10,8 @@ initgame lda #$00
          sta spr_happen+0
          sta spr_happen+1
 
+         jsr animate_block_reset
+
          ;Credits are only given for two player game
          ldx #$00
          lda plram
