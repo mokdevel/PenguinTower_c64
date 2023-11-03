@@ -2,7 +2,7 @@
 Penguin Tower game for Commodore 64.
 ## Credits
 ### Penguin Tower game
-- Code: Jani Hirvo
+- Code: Jani Hirvo aka d'Arc
 - Graphics: Jani Hirvo
 - Music: Side-B
 - Level depacker: Skape
@@ -13,7 +13,6 @@ Penguin Tower game for Commodore 64.
 ### BLED 2x2 - Block Editor 
 - Code: Jani Hirvo
 - Level packer: Skape
-TBD
 ## BLED
 TBD
 ## Background
