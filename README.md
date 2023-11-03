@@ -30,6 +30,7 @@ Luckily I had my code floppies tranferred to PC years back. It took some time to
 ### Fun facts
 - A few previews were shared with 10 playable levels. Then the game crashed - this was on purpose.
 - There exists a unfinished PC version written in assembler. Nope, that will never be finished. Same goes with the level and graphics editor.
+- The release date is the day my age reached the big five-o. 
 # Developer stuff
 TBD
 ## How to compile
@@ -44,7 +45,9 @@ TBD
 # Licensing and (re-)use
 - The code is released as-is. I hope you may learn something from it.
 - Feel free to use any or all code in any way you like.
+- If someone decides to completely redo all the levels and release a new version, that is fine.
+-- Make sure to name it with a distinct name like 'Penguin Tower - summer levels'
+-- Do not call it Penguin Tower 2
 ## Do not
-- 
-- 
+- It is not allowed to publish Penguin Tower game on any other platforms without permission
 
