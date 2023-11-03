@@ -29,7 +29,7 @@ Luckily I had my code floppies tranferred to PC years back. It took some time to
 
 ### Fun facts
 - A few previews were shared with 10 playable levels. Then the game crashed - this was on purpose.
-- The exists a unfinished PC version written in assembler. Nope, that will never be finished. 
+- There exists a unfinished PC version written in assembler. Nope, that will never be finished. Same goes with the level and graphics editor.
 # Developer stuff
 TBD
 ## How to compile
