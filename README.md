@@ -34,5 +34,11 @@ Luckily I had my code floppies tranferred to PC years back. It took some time to
 TBD
 ## How to compile
 TBD
+## Known issues
+- Notation is a mess like inThisWay, InThisWay, inthisway, itw, ... anything you can imagine. Old code - no plans to clean any of those.
+- There is a lot you could optimize in the code. Feel free. ;-)
+- Bomb explosions take quite many cycles .. as well as many other things. In case too many cycles have been used, animations are stopped. This is by design.
+- You can explode multiple blocks by dropping bombs in right order side by side. This is by (accidental) design.
+
 ## Licensing
 TBD
