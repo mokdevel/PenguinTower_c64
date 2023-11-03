@@ -20,7 +20,7 @@ The game has been 'in development' since 199x and was never finished. While it w
 
 Just by coincidence I got interested in looking at C64 development environments. C64 Studio looked interesting and did some quick tests. Oh man, it has everything one could dream of. Amazing piece of software and really lit my interest in C64 coding. Go get it from https://www.georg-rottensteiner.de/en/c64.html#C64_Studio . And the developer is frienldy and quickly reacting to any findings. See: https://github.com/GeorgRottensteiner/C64Studio
 
-Luckily I had my code floppies tranferred to PC years back. It took some time to get everything to proper format but eventually first compilation was successful! Then it was just development work to get the final pieces done. Since the first successful compilation, a lot of bugs has been fixed, new features added, intro and endtro created, new gfx drawn. A small fix ended up in quite a lot of work. It was fun. And now the game is released. 
+Luckily I had my code floppies tranferred to PC years back. It took some time to get everything to proper format but eventually first compilation was successful! Then it was just development work to get the final pieces done. Since the first successful compilation, a lot of bugs has been fixed, new features added, intro and endtro created, new gfx drawn. A small fix ended up in quite a lot of work. But it was fun. And now the game is released. 
 
 ### Thanks 
 - Big thanks to testers (Ulla, Alma, Antero, Akseli, Alina, Anni, Skape).
