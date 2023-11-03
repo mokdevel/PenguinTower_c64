@@ -370,6 +370,8 @@ ptr0     !byte 0
 ;
 ; This is needed for the case when compilation is not able to 
 ; fit everything in memory.
+;
+; NOTE: This does not load the files pt64-pack-ptrs, pt64-bonus-ptrs, pt64-bonus-levels
 
 !ifdef LEVELS_LOAD {
 

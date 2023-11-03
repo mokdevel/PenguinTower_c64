@@ -53,6 +53,7 @@ LEVELS_LIMITED  ;Compilation just loads some of the levels to fit under $d000.
 }
         *= BLOCKANIMDATA
 !bin    "bindata\blocanim78.prg",($a0*8),10             ;1800 1cff - block animation graphics
+;
         *= DATASECTION_2
 !source "data_game.asm"                         ;1d00 1fff - generic data
 ;
