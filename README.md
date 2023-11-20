@@ -20,7 +20,8 @@ See CSDB: https://csdb.dk/release/?id=237024
 ### BLED 2x2 - Block Editor 
 - Code: Jani Hirvo
 - Level packer: Skape
-TBD
+## Version history
+- 7.3: Initial release (2023-11-21)
 ## Background
 The game has been 'in development' since 199x and was never finished. While it would've been great to have the game ready, the interest kind of disappeared. Getting something ready up to 90% is easy and the last 10% takes a lot of time. Eventually the C64 was replaced with a PC, adulthood with family and responsibilities took, other hobbies entered my life. The game project was abandoned .. until now. 
 
