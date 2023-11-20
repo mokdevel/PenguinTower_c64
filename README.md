@@ -5,6 +5,8 @@ You can find me at darc(at)netikka.fi
 
 The release includes the Penguin Tower game, intro with the story and BLED. BLED (BLock EDitor) is the graphics and level editor for the game. It includes everything needed for level design and storing/packing for game use. You need to re-compile the game as there is no level loading functionality in the game. Feel free to implement - the loader is already there. 
 
+See CSDB: https://csdb.dk/release/?id=237024
+
 ## Credits
 ### Penguin Tower game
 - Code: Jani Hirvo aka d'Arc
