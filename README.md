@@ -7,6 +7,11 @@ The release includes the Penguin Tower game, intro with the story and BLED. BLED
 
 See CSDB: https://csdb.dk/release/?id=237024
 
+## How to play
+- Use an original C64/C128
+- On PC, use an emulator. For example: https://vice-emu.sourceforge.io
+
+
 ## Credits
 ### Penguin Tower game
 - Code: Jani Hirvo aka d'Arc
@@ -37,7 +42,8 @@ Luckily I had my code floppies tranferred to PC years back. It took some time to
 ### Fun facts
 - A few previews were shared with 10 playable levels. Then the game crashed - this was on purpose.
 - There exists a unfinished PC version written in assembler. Nope, that will never be finished. Same goes with the level and graphics editor.
-- The release date is the day my age reached the big five-o. 
+- The release date is the day my age reached the big five-o.
+
 # Developer stuff
 TBD
 ## How to compile
