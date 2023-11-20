@@ -401,7 +401,7 @@ LevelFilename_end
 ;---------------------------------------
 ;Code to be removed
 ;
-; This is used for debugging various weird
+; This is used for debugging various weird things
 
 !ifdef TOBEREMOVED {
 ToBeRemoved

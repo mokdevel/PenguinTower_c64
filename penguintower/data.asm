@@ -268,12 +268,6 @@ sin      !byte $E7,$E7,$E7,$E7,$E7,$E7,$E7,$E7,$E7,$E7,$E7,$E7,$E7,$E7,$E7,$E7
          !byte $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00
 
 ;---------------------------------------------
-;Section where you can add a secret byte if you provided a special version to someone
-SPECIAL_VERSION_NORMAL    = $00
-SPECIAL_VERSION_BARBEQUE  = $b7
-special_version = SPECIAL_VERSION_BARBEQUE
-         
-;---------------------------------------------
 ;The score line under the actual map
 ;
 ; The font is embedded in the gfx

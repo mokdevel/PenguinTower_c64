@@ -2,8 +2,6 @@
 ;DEFINES
 
 RELEASE        ;Disables all defines when doing a release
-CHEAT
-TOBEREMOVED
 
 ;---------------------------------------------------
 ;Do-not-remove defines
@@ -23,6 +21,7 @@ NOMUSIC         ;Does not compile nor play music.
 ;GOENDTRO        ;Goes to endtro. This overrides GOGAME
 ;NOSCORELOAD     ;Don't load highscores
 CHEAT           ;Allow T to advance to next level, U +10 levels, E kills all players...
+;TOBEREMOVED    ;Used for weird crash debug
 
 ;--- Level data load defines ---
 ;LEVELS_LOAD     ;Load levels from disk instead of compilation. Quite untested.
