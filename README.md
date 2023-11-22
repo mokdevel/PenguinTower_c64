@@ -44,6 +44,12 @@ Luckily I had my code floppies tranferred to PC years back. It took some time to
 - There exists a unfinished PC version written in assembler. Nope, that will never be finished. Same goes with the level and graphics editor.
 - The release date is the day my age reached the big five-o.
 
+### Related links
+- https://www.gamesthatwerent.com/gtw64/penguin-tower/
+- https://www.commodoreblog.uk/2023/11/1994-bomberman-clone-penguin-tower.html
+- https://www.indieretronews.com/2023/11/penguin-tower-enjoyable-bomberman-clone.html
+- https://www.youtube.com/watch?v=KlikBd-hV-M
+
 # Developer stuff
 TBD
 ## How to compile
