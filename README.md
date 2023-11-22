@@ -50,7 +50,8 @@ Luckily I had my code floppies tranferred to PC years back. It took some time to
 - https://www.indieretronews.com/2023/11/penguin-tower-enjoyable-bomberman-clone.html
 - https://www.youtube.com/watch?v=KlikBd-hV-M
 - https://c64universe.wordpress.com/2023/11/21/penguin-tower-2023/
-- https://vitno.org/2023/11/21/1994-bomberman-clone-penguin-tower-finally-released/- 
+- https://vitno.org/2023/11/21/1994-bomberman-clone-penguin-tower-finally-released/-
+- PC version information: https://onlineclassicgames.com/game/penguin-tower/
 
 # Developer stuff
 TBD
