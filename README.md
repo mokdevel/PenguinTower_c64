@@ -49,6 +49,7 @@ Luckily I had my code floppies tranferred to PC years back. It took some time to
 - https://www.commodoreblog.uk/2023/11/1994-bomberman-clone-penguin-tower.html
 - https://www.indieretronews.com/2023/11/penguin-tower-enjoyable-bomberman-clone.html
 - https://www.youtube.com/watch?v=KlikBd-hV-M
+- https://c64universe.wordpress.com/2023/11/21/penguin-tower-2023/
 
 # Developer stuff
 TBD
