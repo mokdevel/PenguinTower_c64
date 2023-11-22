@@ -41,7 +41,6 @@ Luckily I had my code floppies tranferred to PC years back. It took some time to
 
 ### Fun facts
 - A few previews were shared with 10 playable levels. Then the game crashed - this was on purpose.
-- There exists a unfinished PC version written in assembler. Nope, that will never be finished. Same goes with the level and graphics editor. You can find it here: https://archive.org/details/msdos_Penguin_Tower_1997
 - The release date is the day my age reached the big five-o.
 
 ### Related links
@@ -50,8 +49,12 @@ Luckily I had my code floppies tranferred to PC years back. It took some time to
 - https://www.indieretronews.com/2023/11/penguin-tower-enjoyable-bomberman-clone.html
 - https://www.youtube.com/watch?v=KlikBd-hV-M
 - https://c64universe.wordpress.com/2023/11/21/penguin-tower-2023/
-- https://vitno.org/2023/11/21/1994-bomberman-clone-penguin-tower-finally-released/-
-- PC version information: https://onlineclassicgames.com/game/penguin-tower/
+- https://vitno.org/2023/11/21/1994-bomberman-clone-penguin-tower-finally-released/
+
+### PC version
+There exists a unfinished PC version written in assembler. Nope, that will never be finished. Same goes with the level and graphics editor. 
+- https://archive.org/details/msdos_Penguin_Tower_1997- 
+- https://onlineclassicgames.com/game/penguin-tower/
 
 # Developer stuff
 TBD
