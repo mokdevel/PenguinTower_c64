@@ -41,7 +41,7 @@ Luckily I had my code floppies tranferred to PC years back. It took some time to
 
 ### Fun facts
 - A few previews were shared with 10 playable levels. Then the game crashed - this was on purpose.
-- There exists a unfinished PC version written in assembler. Nope, that will never be finished. Same goes with the level and graphics editor.
+- There exists a unfinished PC version written in assembler. Nope, that will never be finished. Same goes with the level and graphics editor. You can find it here: https://archive.org/details/msdos_Penguin_Tower_1997
 - The release date is the day my age reached the big five-o.
 
 ### Related links
