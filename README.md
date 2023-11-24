@@ -16,7 +16,7 @@ See CSDB: https://csdb.dk/release/?id=237024
 ### Penguin Tower game
 - Code: Jani Hirvo aka d'Arc
 - Graphics: Jani Hirvo
-- Music: Side-B
+- Music: AMJ/Side-B
 - Level depacker: Skape
 ### Penguin Tower intro
 - Code: Jani Hirvo
