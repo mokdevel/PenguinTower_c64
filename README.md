@@ -51,6 +51,7 @@ Luckily I had my code floppies tranferred to PC years back. It took some time to
 - https://c64universe.wordpress.com/2023/11/21/penguin-tower-2023/
 - https://vitno.org/2023/11/21/1994-bomberman-clone-penguin-tower-finally-released/
 - https://www.amigafrance.com/forums/topic/c64-penguintower/
+- https://www.lemon64.com/forum/viewtopic.php?t=83542
 
 ### PC version
 There exists a unfinished PC version written in assembler. Nope, that will never be finished. Same goes with the level and graphics editor. 
