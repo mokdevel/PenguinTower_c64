@@ -65,7 +65,7 @@ There exists a unfinished PC version written in assembler. Nope, that will never
 # Developer stuff
 Source code is included for the game, intro and editor (aka BLED). 
 ## How to compile
-With https://www.georg-rottensteiner.de/en/c64.html#C64_Studio|C64 Studio, Open the .s64 file in the respective directory 
+With [C64 Studio](https://www.georg-rottensteiner.de/en/c64.html#C64_Studio), open the .s64 file in the respective directory. Compile and run. For a full compile, make sure the RELEASE define is enabled.
 ## Known issues and this and that
 - Notation is a mess like inThisWay, InThisWay, inthisway, itw, ... anything you can imagine. Old code - no plans to clean any of those.
 - There is a lot you could optimize in the code. Feel free. ;-)
