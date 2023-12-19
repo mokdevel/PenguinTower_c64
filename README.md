@@ -45,6 +45,7 @@ Luckily I had my code floppies tranferred to PC years back. It took some time to
 
 ### Related links
 - https://www.gamesthatwerent.com/gtw64/penguin-tower/
+- https://fusionretrobooks.com/collections/zzap-64-magazine/products/zzap-64-micro-action-issue-17
 - https://www.lemon64.com/review/penguin-tower/1317
 - https://www.commodoreblog.uk/2023/11/1994-bomberman-clone-penguin-tower.html
 - https://www.indieretronews.com/2023/11/penguin-tower-enjoyable-bomberman-clone.html
