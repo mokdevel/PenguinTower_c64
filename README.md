@@ -9,8 +9,8 @@ See CSDB: https://csdb.dk/release/?id=237024
 
 ## How to play
 - Use an original C64/C128
+- THEC64 mini or similar https://retrogames.biz/products/thec64-mini/
 - On PC, use an emulator. For example: https://vice-emu.sourceforge.io
-
 
 ## Credits
 ### Penguin Tower game
@@ -62,7 +62,7 @@ There exists a unfinished PC version written in assembler. Nope, that will never
 - https://onlineclassicgames.com/game/penguin-tower/
 
 # Developer stuff
-TBD
+Source code is included for the game, intro and editor (aka BLED). 
 ## How to compile
 TBD
 ## Known issues and this and that
@@ -80,4 +80,3 @@ TBD
 - - Do not call it Penguin Tower 2
 ## Do not
 - It is not allowed to publish Penguin Tower game on any other platforms without permission
-
