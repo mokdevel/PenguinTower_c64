@@ -55,6 +55,7 @@ Luckily I had my code floppies tranferred to PC years back. It took some time to
 - https://www.lemon64.com/forum/viewtopic.php?t=83542
 - https://www.lemon64.com/game/penguin-tower
 - https://www.twitch.tv/videos/1984517513
+- https://youtu.be/aNetguZOoOM?si=22P3_uwsux5xFt-2&t=10191
 
 ### PC version
 There exists a unfinished PC version written in assembler. Nope, that will never be finished. Same goes with the level and graphics editor. 
@@ -64,7 +65,7 @@ There exists a unfinished PC version written in assembler. Nope, that will never
 # Developer stuff
 Source code is included for the game, intro and editor (aka BLED). 
 ## How to compile
-TBD
+With C64 Studio, Open the .s64 file in the respective directory 
 ## Known issues and this and that
 - Notation is a mess like inThisWay, InThisWay, inthisway, itw, ... anything you can imagine. Old code - no plans to clean any of those.
 - There is a lot you could optimize in the code. Feel free. ;-)
