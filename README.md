@@ -59,6 +59,7 @@ Luckily I had my code floppies tranferred to PC years back. It took some time to
 - https://www.lemon64.com/game/penguin-tower
 - https://www.twitch.tv/videos/1984517513
 - https://youtu.be/aNetguZOoOM?si=22P3_uwsux5xFt-2&t=10191
+- https://www.youtube.com/watch?v=KHS3SnWxX2M
 
 ### PC version
 There exists a unfinished PC version written in assembler. Nope, that will never be finished. Same goes with the level and graphics editor. 
