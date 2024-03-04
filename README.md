@@ -60,6 +60,7 @@ Luckily I had my code floppies tranferred to PC years back. It took some time to
 - https://www.twitch.tv/videos/1984517513
 - https://youtu.be/aNetguZOoOM?si=22P3_uwsux5xFt-2&t=10191
 - https://www.youtube.com/watch?v=KHS3SnWxX2M
+- https://www.youtube.com/watch?v=jPTv3c2Lf_M
 - https://www.reddit.com/r/c64/comments/192spw2/penguin_tower_unreleased_commodore_64_game/
 - https://www.reddit.com/r/retrogamedev/comments/192spbm/penguin_tower_unreleased_commodore_64_game/- 
 
