@@ -62,11 +62,12 @@ Luckily I had my code floppies tranferred to PC years back. It took some time to
 - https://www.youtube.com/watch?v=KHS3SnWxX2M
 - https://www.youtube.com/watch?v=jPTv3c2Lf_M
 - https://www.reddit.com/r/c64/comments/192spw2/penguin_tower_unreleased_commodore_64_game/
-- https://www.reddit.com/r/retrogamedev/comments/192spbm/penguin_tower_unreleased_commodore_64_game/- 
+- https://www.reddit.com/r/retrogamedev/comments/192spbm/penguin_tower_unreleased_commodore_64_game/
+- https://archive.org/details/d64_Penguin_Tower_1994_Problemchild_Productions (preview version released in 1994)
 
 ### PC version
 There exists a unfinished PC version written in assembler. Nope, that will never be finished. Same goes with the level and graphics editor. 
-- https://archive.org/details/msdos_Penguin_Tower_1997- 
+- https://archive.org/details/msdos_Penguin_Tower_1997
 - https://onlineclassicgames.com/game/penguin-tower/
 
 # Developer stuff
