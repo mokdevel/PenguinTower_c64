@@ -85,7 +85,7 @@ With [C64 Studio](https://www.georg-rottensteiner.de/en/c64.html#C64_Studio), op
 - The code is released as-is. I hope you may learn something from it.
 - Feel free to use any or all code in any way you like.
 - If someone decides to completely redo all the levels and release a new version, that is fine. Remember to send me a copy.
-- - Make sure to name it with a distinct name like 'Penguin Tower - summer levels'
-- - Do not call it Penguin Tower 2
+  - Make sure to name it with a distinct name like 'Penguin Tower - summer levels'
+  - Do not call it Penguin Tower 2
 ## Do not
 - It is not allowed to publish Penguin Tower game on any other platforms without permission
